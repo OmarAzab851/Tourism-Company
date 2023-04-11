@@ -1,0 +1,39 @@
+
+
+.header .navbar>.nav-item .nav-link{
+    display: inline-block;
+    text-align: right;
+}
+
+
+.header .navbar>.nav-item>.nav-link {
+
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    display: block;
+    padding: 30px 15px;
+
+}
+
+.header .navbar>.nav-item>.nav-link::after {
+
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    margin-top: 2px;
+    background-color: #6195ff;
+    transition: width 0.5s;
+
+
+}
+
+.header .navbar>.nav-item>.nav-link.active::after {
+    width: 100%;
+
+}
+
+.header .navbar>.nav-item>.nav-link:hover::after {
+    width: 100%;
+}
